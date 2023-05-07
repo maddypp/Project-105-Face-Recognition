@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <center>
+        <h1>Image recognition</h1>
+        <br>
+        <hr>
+        <h2>Dad</h2>
+        <hr>
+        <h2>Mum</h2>
+        <hr>
+        <h2>Brother</h2>
+        <hr>
+        <h2>Me</h2>
+        <hr>
+        <br>
+        <div class="container" id="camera"></div>
+        <br>
+        <div class="container" id="result"></div>
+        <button type="button" id="capture" class="btn btn-success" onclick="capture()">Capture</button>
+        <button type="button" id="identify_" class="btn btn-primary" onclick="identify()">Identify</button>
+        <br>
+        <h2>Family Member: <span id="member_span"> </span></h2>
+        <h2>Accuracy: <span id="accuracy_span"></span></h2>
+    </center>
+    <script src="main.js"></script>
+</body>
+</html>
